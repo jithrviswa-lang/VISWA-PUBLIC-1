@@ -210,7 +210,7 @@ async def fetch_account(uid, password):
             "success": True,
             "uid": str(uid),
             "account_id": jd.get("account_id"),
-            "jwt_token": jwt,
+            "token": jwt,
             "access_token": oauth.get("access_token"),
             "region": jd.get("lock_region"),
         }
